@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ProductBytypeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#128FF3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backbytype"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="10dp"
+            app:tint="@color/white" />
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/Searchtype"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bd_search_type"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:hint="Nhap ten truyen can tim"
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+    <GridView
+        android:paddingTop="20dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:id="@+id/listproducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"></GridView>
+
+</LinearLayout>

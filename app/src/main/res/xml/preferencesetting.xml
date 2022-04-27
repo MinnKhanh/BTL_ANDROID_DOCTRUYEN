@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.SettingsActivity">
+    <Preference
+        android:key="exit"
+        android:title="Exit"
+        android:icon="@drawable/ic_back"/>
+
+    <PreferenceCategory android:title="General Setting">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/dark"
+            android:summary="Better eyesight and power saving"
+            android:title="Dark Mode" />
+        <ListPreference
+
+            android:defaultValue="3"
+            android:dialogTitle="@string/collumnumber"
+            android:entries="@array/setcollum"
+            android:entryValues="@array/pref_duration"
+            android:key="coll"
+            android:summary="3 Column"
+            android:title="@string/collumnumber" />
+
+
+        <ListPreference
+            android:key="@string/pref_seek_val"
+            android:summary="manage push setting"
+            android:title="Push Notification" />
+
+        <ListPreference
+            android:key="cash"
+            android:summary="free space"
+            android:title="Clear Cash" />
+        <ListPreference
+            android:key="about"
+            android:title="About" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

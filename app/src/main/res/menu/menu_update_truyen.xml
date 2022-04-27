@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/updatebook"
+        android:title="update"
+        />
+    <item android:id="@+id/removebook"
+        android:title="Remove"
+        />
+    <item android:id="@+id/addchap"
+        android:title="Add chap"
+        />
+    <item android:id="@+id/addtofavorite"
+        android:title="Add favorite"
+        />
+</menu>

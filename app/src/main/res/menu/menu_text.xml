@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/sizeColor"
+        android:title="Size and Color"
+        />
+    <item android:id="@+id/font"
+        android:title="Font"
+        />
+    <item android:id="@+id/backcolor"
+        android:title="Background Color"
+        />
+</menu>

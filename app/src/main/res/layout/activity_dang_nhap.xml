@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ok"
+    tools:context=".Activities.DangNhap">
+
+    <ImageView
+        android:id="@+id/img_Account"
+        android:layout_width="43dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="128dp"
+        android:src="@drawable/user_xanh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/img_Password"
+        android:layout_width="43dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/key_xanh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Account"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:textColor="#ED0C66"
+        android:id="@+id/edt_account"
+        android:layout_width="208dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="Tên tài khoản"
+        android:inputType="textPersonName"
+        android:textColorHint="#0C64EA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toEndOf="@+id/img_Account"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:textColor="#ED0C66"
+        android:layout_width="208dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textColorHint="#0C64EA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toEndOf="@+id/img_Password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_account" />
+
+    <Button
+        android:id="@+id/btn_DangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#817575"
+        android:text="Đăng nhập"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <TextView
+        android:id="@+id/txt_DangKy"
+        android:layout_width="346dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:text="Chưa có tài khoản? Đăng ký tại đây "
+        android:textColor="#0C64EA"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_DangNhap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

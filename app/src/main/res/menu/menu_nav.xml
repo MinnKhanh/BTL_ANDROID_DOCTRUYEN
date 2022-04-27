@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navcategory"
+            android:iconTint="#9F9C9C"
+            android:icon="@drawable/ic_category"
+            android:title="Category" />
+        <item
+            android:id="@+id/navbookmask"
+            android:iconTint="#9F9C9C"
+            android:icon="@drawable/ic_bookmask"
+            android:title="Bookmask" />
+        <item
+            android:id="@+id/Setting"
+            android:iconTint="#9F9C9C"
+            android:icon="@drawable/ic_setting"
+            android:title="Setting" />
+        <item
+            android:id="@+id/Addtruyen"
+            android:iconTint="#9F9C9C"
+            android:icon="@drawable/ic_addtruyen"
+            android:title="Add Product" />
+    </group>
+    <item android:title="Account">
+        <menu>
+
+
+            <item
+                android:id="@+id/changeacount"
+                android:icon="@drawable/ic_changeaccount"
+                android:iconTint="#9F9C9C"
+                android:title="Chagne Account" />
+            <item
+                android:id="@+id/addaccount"
+                android:iconTint="#9F9C9C"
+                android:icon="@drawable/ic_addaccount"
+                android:title="Add Account" />
+            <item
+                android:id="@+id/signout"
+                android:iconTint="#9F9C9C"
+                android:icon="@drawable/ic_signout"
+                android:title="Sign out" />
+        </menu>
+    </item>
+</menu>

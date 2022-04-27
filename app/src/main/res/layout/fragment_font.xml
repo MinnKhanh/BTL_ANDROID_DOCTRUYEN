@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:background="@drawable/bg_header_dialog"
+        android:text="Font"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/grfont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bd_radious"
+        android:gravity="left"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <RadioButton
+            android:id="@+id/alex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AlexBrush-Reagular"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/arizo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arizonia-Regular"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/chuck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ChuckFive-Regular"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/lobster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lobster"
+            android:textSize="20dp" />
+        <RadioButton
+            android:id="@+id/pacifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pacifico"
+            android:textSize="20dp" />
+        <RadioButton
+            android:id="@+id/roboto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roboto"
+            android:textSize="20dp" />
+    </RadioGroup>
+</ScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E91E63"
+        android:layout_marginRight="150dp"
+        android:text="No"
+        />
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="Yes"
+        />
+</LinearLayout>
+</LinearLayout>

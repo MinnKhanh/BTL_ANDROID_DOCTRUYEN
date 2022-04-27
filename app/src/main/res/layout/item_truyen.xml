@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgbook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/luffy"
+            app:riv_corner_radius="3dp" />
+
+        <TextView
+            android:id="@+id/chap"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/back_chap"
+            android:gravity="center_vertical"
+            android:text="Truyen Tranh"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+<TextView
+    android:id="@+id/Namebook"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textSize="15dp"
+    android:text="Ten Truyen Tranh"
+    android:textStyle="bold"
+    android:textColor="@color/black"/>
+</LinearLayout>

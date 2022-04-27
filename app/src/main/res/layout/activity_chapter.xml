@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Chapter"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="#128FF3"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/Back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"
+            android:padding="10dp"
+            app:tint="@color/white" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"/>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/optiondetailchap"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/ic_optinitem"
+            android:tint="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgAnh"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/luffy"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="10dp"
+            />
+        <LinearLayout
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tvtentruyen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên Truyện: One Piece Chap 100"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/Tacgia"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số Chap: 100"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/ngayxuat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tác Giả: Oda"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/suatruyen"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:text="Sửa"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+        <Button
+            android:id="@+id/read"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Read"
+            />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="1"
+        android:id="@+id/listproduct"
+        android:layout_width="match_parent"
+        android:layout_height="549dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:padding="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+
+
+
+</LinearLayout>

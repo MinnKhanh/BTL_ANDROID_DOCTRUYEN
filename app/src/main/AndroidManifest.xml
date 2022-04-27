@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appreadbook">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppReadBook"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activities.NotificationActivity"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".Activities.AddCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".Activities.Recycleviewslide"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SliderCategory"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Updatetruyen"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ReadMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DangNhap"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.DangKy"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Home"
+            android:exported="true" >  </activity>
+        <activity
+            android:name=".Activities.Chapter"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.BookMarkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddChapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddproductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ProductBytypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Categories"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" ></activity>
+    </application>
+
+</manifest>
